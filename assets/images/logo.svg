@@ -1,0 +1,20 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" width="250" height="50">
+	<title>logo-svg</title>
+	<defs>
+		<image  width="196" height="34" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAAAiCAMAAAA3ZYbGAAAAAXNSR0IB2cksfwAAAFdQTFRF/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lwsp3NowAAAB10Uk5TAID/QCB/EE+fv68wXz+PcFDfz+9goPDQ4LDAkG/cHn6RAAADrElEQVR4nO1Y27biIAwtpcVe1N6r4vn/75yWJBCiHutcnbXMUwlhJzuBgCbJ7xeVrqL/APJflA+Jd5EPiXeRD4mfkixfJUvMrijLavlwUudVWRZ7E9vqVVvmBwFhdvmiPtJaQaJxDhry5LkpP4KJBWfv4GuBvj+u6Dseizm4SCqy1eCx7VKQajHWPQ6Gka0cySQdcoaYFaROy/qWxOQGc02eFK0LI5hI1EAw+h56cFoXZJmmXRsQKq9NezOGQfBpSqZNe5+uduD6UZIIHJ6RKBhMfhe94znyUngELl00wqyYWJsOyGKM1WkTkTBF4PCMRCTqLjo4lS7HuwiRlAB3wuE8E1UT+T+TH8NImJ5x2ESCYCB3GdThfFEXmOjcSvdtrQ0uCcG2WodCKV23GHfG2KtlYNBKBW7zuotqB2qzQCLm8JzEZUUf55A7G2zQawP2toVCge1ICBenbRDOuTVnNCHy6cijGdYtC1HiiZtSq9mZQA4pHZ9nJHCmnmlV7T6uCaH7UviDD/4nRKA4zqhlO3LFBjibcLy0pQ/CNEgSSLTIwTe4JyTONOFzDh/UkzI3ojaOMkNcOorP8qhq70c9CMeZz4kQsB4Eh2ck/ERGW8OhdznJgJlzNoe903WcRFQzT1eQCO2b6hUXKCaBUmwlIdAtZTQWt6ARrVJAg/8bP0qUktxsIPFoO4Uyv0qCztrPkfBuMppwR6j/ngTdKLiKat5KEmHfRSRmG8kYuJ2W4fwCiTHyj8OG8MRh8yQmcNEZDkd1u0oSEy1vyRnsbfF+oyYDTu0LJAzkFPHw9s6oJVdornvNSUzoj+5LgEPKZpAkfCuGwNqoWDcpMtx2GwlMSu+WmsqnFHYIPnXqAZ+AymeW7kjusV9Z1D2bQRL4HsPX1uLKQCW/MHVFeRMi+t9IAq2H4uvriL2T3WtLH9znlVezEwQRYWPEq3QoK/+YjJ8dRb4/dmxiJPTdYbe6LQKKm6dUbCRx8+rCA2JOQm2TuA3A/OD2kJlTKY8egCfDqhKkCPnsjrlPxVYS/kWCQsdQsDhlggQGDhsxysT8DQl6bhnRZS8rzFWCbCeRtGe2lv1Y4pjOSdyQ8XAXop7zaAWJJuDb0JEUrx62x1Cf0/VFEksImBfbRG0vu2I1Js1B6FbBwBuwhbY7TyaRJLRRQOMS/To3DXo9X30rb0F1ViLejVJrfe8PALOoZT//BkL8ig439gP4+hZ+0cjr6d+KfHb8l/Ih8S7yIfEu8sskfgCdSzCLkPLOegAAAABJRU5ErkJggg=="/>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="27.678" y1="47.427" x2="34.736" y2="14.22">
+			<stop offset="0" stop-color="#ff8970"  />
+			<stop offset="1" stop-color="#ff8970"  />
+		</linearGradient>
+		<image  width="45" height="52" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAA0CAMAAAApHUH7AAAAAXNSR0IB2cksfwAAAFFQTFRF/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lw/4lwzvUKNQAAABt0Uk5TAECfMCD/EH/vb1/fv6/AUOBg8HCAj5DPoLDQfHYzzwAAASNJREFUeJztltkSgyAMRUEBqba2KNbl/z+0dUqAlM1OX82Tyxk9yTi5EvJ/0ao+zLKKc16JQ6xoJN9LXg7AbcehOlpg6ZX7dWM5iQqwHg6apL4RfrOM1MB39yh7B+HHR1c9zPk1nGYNwsNovTToTFjHCT/9Gwx00DR9YVwUdGaYJrXCsYb0gKa5gLCONk8EAHKfpnFb0t8FBX1q6D7/zakB0Vl211l/oYk+6ZM+6RhdXO2Ilm0ebqVPR3ejLTrbDaFgGU0JHWYTYH+gW0YxHTEBu5olSTdzYQ6Sxi7Uzbs1gg4OPpcACr/Q6rhVbSNr0EFL3zrMJsASTTZfRzTAJheq05mguWgCBDpGeMywSOddYXNpnTUX2186femXwNPZVBkq1gsq2xSFRxWauwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<use id="img1" href="#img1" x="54" y="8" />
+	<g id="Layer">
+		<path id="Layer" class="shp0" d="M21.59 25.24L40.83 14.22L40.83 36.41L21.59 47.43L21.59 25.24Z" />
+		<use id="img2" href="#img2" x="-1" y="-1" />
+	</g>
+</svg>

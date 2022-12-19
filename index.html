@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE9FJ888P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SBE9FJ888P');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+
+        html{
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .container2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            background: #f4f5fb;
+        }
+
+        .threeCanvas {
+            width: 50%;
+            height: 70%;
+            background: white;
+            resize: both;
+            overflow: hidden;
+            direction: rtl;
+            box-shadow: rgb(0 0 0 / 5%) 0px 0px 6px 2px;
+            border-radius: 15px;
+            max-width: 50%;
+            max-height: 78%;
+        }
+
+        #menu {
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 10px
+        }
+
+        #btn {
+            background-color: white;
+            padding: 0 16px 0 16px;
+            border-radius: 15px;
+            color: #5279D1;
+            font-family: 'Titillium Web', sans-serif;;
+            font-size: larger;
+            font-weight: bold;
+            text-transform: capitalize;
+            transition: .3s;
+            border: 2px solid #5279D1;
+            padding: 3
+        }
+
+        #btn:hover {
+            background-color: #5279D1;
+            color: white
+        }
+
+        .uk-panel {
+            margin-top: 30px;
+            padding-top: 10px
+        }
+
+        #faq, #upgrade, #contact {
+            font-family: 'Titillium Web', sans-serif;;
+            font-weight: 600;
+            color: #35435F;
+            font-size: larger;
+            text-transform: capitalize;
+        }
+
+        #faq:hover, #contact:hover, #upgrade:hover {
+            color: #727577;
+            text-decoration: none;
+        }
+
+        .uk-animation-fade {
+            -webkit-animation-duration: 0.5s !important;
+            animation-duration: 0.5s !important;
+            animation-delay: 3000ms !important;
+        }
+
+        .navbar {
+            position:absolute;
+            padding: 1em;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            margin-bottom: 76px;
+            background-color: #fff;
+            box-shadow: rgb(0 0 0 / 5%) 0px 0px 6px 2px;
+            }
+
+        .navbar .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: flex-end;
+                    padding:0 1em;
+            height: 30px;
+        }
+
+        .navbar .container .logo {
+            height: auto;
+            margin-top: 0;
+        }
+
+        .navbar .container .primary-nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding:0;
+            list-style-type: none;
+            align-items: center;
+            margin-bottom:0;
+        }
+
+        .navbar .container .primary-nav li {
+            padding-left: 32px;
+        }
+
+        .navbar .container .primary-nav li a {
+            text-decoration: none;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .info{
+            position: absolute;
+            bottom: 3em;
+            left: 1em;
+            border: none;
+            background-color: #ffffff;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 5%) 0px 0px 6px 2px;
+        }
+
+        .info:hover{
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px -5px;
+        }
+
+    </style>
+    <meta name="description"
+        content="Mockupea is a free app for creating a 3d book or magazine mockup in your browser. You can use it to present your new ebook or magazine.">
+    <meta name="keywords"
+        content="book mockup generator, book mockup png, book mockup free, book mockup online free, book presentation template, free book mockup, book cover mockup, book presentation tool, square book mockup, ebook mockup, 3d book mockup, mockup book cover, free ebook mockup, 3d book mockup generator, 3d book free, 3d book model, book mockups, book mockup front and back, book mockup square, mockup tool, magazine mockup, magazine mockup online, mockups online, mockups studio, cover mockup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Copyright &#169; 2022 Mockupea. All rights reserved.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <title>Mockupea - free book mockup generator online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+</head>
+
+<body>
+    <p id="meta" hidden>Mockupea is an app for creating a 3d book or magazine mockup in your browser. You
+        can use it to present your new ebook or magazine.
+    </p>
+
+    <div class="navbar">
+        <div class="container">
+
+            <nav>
+                <ul class="primary-nav">
+                    <li><button class="uk-button" type="button" id="btn"
+                    uk-toggle="target: #offcanvasUsage" style="stroke-width: 2px;"><span class="uk-margin-small-right"
+                        uk-icon="icon: cog"></span>Edit</button></li>
+                    
+                    <li><a onClick="removehash()" id="faq" href="#modal-faq" uk-toggle>Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <h2 class="mobile_message" style="display=none;">Sorry, not yet ready for mobile view :(</h2>
+    <div class="container2">
+        <div id="canvas" class="threeCanvas">
+            <section id="loading-screen">  
+                <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+                    <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+                    <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+                    <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+                    <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <br>
+            </section>
+        </div>
+    </div>
+
+    <div class="uk-container-large uk-position-medium uk-position-bottom-right uk-box-shadow-small uk-animation-fade hidden"
+        id="consent-popup">
+        <div class="uk-clearfix">
+            <p class="uk-text-normal"> Mockupea uses cookies to improve your experience. <a href="#modal-privacy" uk-toggle >Privacy details</a></p>
+            <button class="uk-button uk-button-primary  uk-float-right" id="accept" type="button"><svg width="24"
+                    height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="white" clip-rule="evenodd">
+                    <path
+                        d="M23.999 12.149c-.049 3.834-1.893 7.223-4.706 9.378-1.993 1.53-4.485 2.449-7.198 2.473-6.464.057-12.051-5.107-12.095-12 3.966 1.066 7.682-1.993 6-6 4.668.655 6.859-2.389 6.077-6 6.724.064 11.999 5.542 11.922 12.149zm-15.576-4.123c-.065 3.393-2.801 5.868-6.182 6.166 1.008 4.489 5.015 7.807 9.759 7.807 5.262 0 9.576-4.072 9.97-9.229.369-4.818-2.755-9.357-7.796-10.534-.277 2.908-2.381 5.357-5.751 5.79zm5.077 8.974c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-5.5-2.853c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm10-2.147c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm-5 0c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm2.5-5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-12.5 0c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-1.5-4c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm6-2c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-3.5-1c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z" />
+                </svg> Got it!</button>
+        </div>
+    </div>
+
+    <div class="uk-inline">
+        <button class="info" type="button"><span  uk-icon="icon: info"></span>Info</button>
+        <div uk-dropdown="mode: click" class="uk-border-rounded">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-nav-header uk-text-capitalize">Copyright &#169; 2022 Mockupea. All rights reserved.</li>
+                <li><a href="#modal-privacy" uk-toggle>Privacy Policy.</a></li>
+                <li><a href="#modal-terms" uk-toggle >Terms and conditions</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><p>Info: <a href="https://info.mockupea.com" target="_blank">info.mockupea.com</a></p></li>
+                <li><p>Contact: mockupea@gmail.com</p></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <p class="selectedCamera" id="active">CAMERA 1</p>
+
+
+    <div id="modal-privacy" class="uk-flex-top uk-modal-container" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+            <h3 class="uk-card-title">Privacy Policy</h3>
+            <p>Your privacy is important to us. It is Mockupea&#39;s policy to respect your privacy and comply with any
+                applicable law and regulation regarding any personal information we may collect about you, including
+                across our website, <a href="https://mockupea.com">https://mockupea.com</a>, and other sites we own and
+                operate. </p>
+            <h4>Use of Cookies</h4>
+            <p>We use &ldquo;cookies&rdquo; to collect information about you and your activity across our site. A cookie
+                is a small piece of data that our website stores on your computer, and accesses each time you visit, so
+                we can understand how you use our site. This helps us serve you content based on preferences you have
+                specified. </p>
+            <h4>Disabling Cookies</h4>
+            <p>You can prevent the setting of cookies by adjusting the settings on your browser (we suggest to see your
+                browser Help section for how to do this). Please, be aware that disabling cookies will affect the
+                functionality of this and many other websites that you visit. Disabling cookies will usually result in
+                also disabling certain functionality and features of this site. Therefore it is recommended that you do
+                not disable cookies.</p>
+            <h4>Information We Collect</h4>
+            <p>We collect standard internet log information and details of visitor behavior patterns which is essential
+                in helping us to provide fast and bug-free service with relevant information. If cookies are accepted by
+                your browser, some of the cookies will be stored on your hard drive while the rest of the cookies will
+                be stored in the temporary memory </p>
+            <h4>Log Data</h4>
+            <p>When you visit our Mockupea, we may automatically log the standard data provided by your web browser. It
+                may include your device’s Internet Protocol (IP) address, your browser type and version, the pages you
+                visit, the time and date of your visit, the time spent on each page, other details about your visit, and
+                technical details that occur in conjunction with any errors you may encounter. </p>
+            <p>Please be aware that while this information may not be personally identifying by itself, it may be
+                possible to combine it with other data to personally identify individual persons. </p>
+            <h4>Collection and Use of Information</h4>
+            <p>We may collect personal information from you when you do any of the following on our website: </p>
+            <ul>
+                <li>Use a mobile device or web browser to access our content</li>
+                <li>Contact us via email, social media, or on any similar technologies</li>
+                <li>When you mention us on social media</li>
+            </ul>
+            <p>We may collect, hold, use, and disclose information for the following purposes, and personal information
+                will not be further processed in a manner that is incompatible with these purposes: </p>
+            <p>Please be aware that we may combine information we collect about you with general information or research
+                data we receive from other trusted sources. </p>
+            <h4>Security of Your Personal Information</h4>
+            <p>When we collect and process personal information, and while we retain this information, we will protect
+                it within commercially acceptable means to prevent loss and theft, as well as unauthorized access,
+                disclosure, copying, use, or modification. </p>
+            <p>Although we will do our best to protect the personal information you provide to us, we advise that no
+                method of electronic transmission or storage is 100% secure, and no one can guarantee absolute data
+                security. We will comply with laws applicable to us in respect of any data breach. </p>
+            <p>You are responsible for selecting any password and its overall security strength, ensuring the security
+                of your own information within the bounds of our services. </p>
+            <h4>How Long We Keep Your Personal Information</h4>
+            <p>We keep your personal information only for as long as we need to. This time period may depend on what we
+                are using your information for, in accordance with this privacy policy. If your personal information is
+                no longer required, we will delete it or make it anonymous by removing all details that identify you.
+            </p>
+            <p>However, if necessary, we may retain your personal information for our compliance with a legal,
+                accounting, or reporting obligation or for archiving purposes in the public interest, scientific, or
+                historical research purposes or statistical purposes. </p>
+            <h4>Localstorage</h4>
+            <p>Localstorage is a little bit of data used to identify you in your browser.
+                It saves your license key for verification in this event.
+                To utilize the Mockupea premium service, you must have local storage.
+                We save current session information in localstorage so you don't have to authenticate every time.
+                We also use localstorage to store app data such as camera position.
+            </p>
+            <h4>Data storage</h4>
+            <p>Mockupea relies on third-party vendors and hosting partners to supply the necessary hardware, software, networking, storage, and other technology to keep mockupea.com up and running.
+                The code and all rights to the mockupea.com website are owned by Mockupea.
+            </p>
+            <h4>External websites</h4>
+            <p>This privacy policy does not cover external websites that are linked to Mockupea. </p>
+            <h4>International Transfers of Personal Information</h4>
+            <p>The personal information we collect is stored and/or processed where we or our partners, affiliates, and
+                third-party providers maintain facilities. Please be aware that the locations to which we store,
+                process, or transfer your personal information may not have the same data protection laws as the country
+                in which you initially provided the information. If we transfer your personal information to third
+                parties in other countries: (i) we will perform those transfers in accordance with the requirements of
+                applicable law; and (ii) we will protect the transferred personal information in accordance with this
+                privacy policy. </p>
+            <h4>Payments</h4>
+            <p>Within the Service, we may provide paid service. In this instance, payment processing is handled by third-party services (e.g. payment processors).
+            </p>
+            <h4>Changes to This Policy</h4>
+            <p>At our discretion, we may change our privacy policy to reflect updates to our business processes, current
+                acceptable practices, or legislative or regulatory changes. If we decide to change this privacy policy,
+                we will post the changes here at the same link by which you are accessing this privacy policy. </p>
+            <h4>Contact Us</h4>
+            <p>For any questions or concerns regarding your privacy, you may contact us using the following details:
+            </p>
+            <p>Mockupea<br />
+                mockupea@gmail.com </p>
+        </div>
+    </div>
+
+    <div id="modal-terms" class="uk-flex-top uk-modal-container" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h3 class="uk-card-title">Terms &amp; Conditions</h3>
+            <p>
+                By downloading or using the app, these terms will
+                automatically apply to you – you should make sure therefore
+                that you read them carefully before using the app. You’re not
+                allowed to copy, or modify the app, any part of the app, or
+                our trademarks in any way. You’re not allowed to attempt to
+                extract the source code of the app, and you also shouldn’t try
+                to translate the app into other languages, or make derivative
+                versions. The app itself, and all the trade marks, copyright,
+                database rights and other intellectual property rights related
+                to it, still belong to Mockupea Creator.
+            </p>
+            <p>
+                You are allowed to use https://mockupea.com for creating materials for personal and commercial purposes.
+                You do not need to credit Mockupea (but it is always appreciated).
+                Upon the termination of a license, you will lose access to the PRO features.
+                We reserve the right to terminate members license key at our own discression if we deem it necessary.
+            </p>
+            <p>
+                The materials on https://mockupea.com are provided on an ‘as is’ basis.
+                Mockupea makes no warranties, expressed or implied, and hereby disclaims 
+                and negates all other warranties including, without limitation, implied warranties or 
+                conditions of merchantability, fitness for a particular purpose, or non-infringement of 
+                intellectual property or other violation of rights. Further, Mockupea does not warrant or 
+                make any representations concerning the accuracy, likely results, or reliability of the use of 
+                the materials on its website or otherwise relating to such materials or on any sites linked to this site.
+            </p>
+            <p>
+                Mockupea Creator is committed to ensuring that the app is
+                as useful and efficient as possible. For that reason, we
+                reserve the right to make changes to the app or to charge for
+                its services, at any time and for any reason. We will never
+                charge you for the app or its services without making it very
+                clear to you exactly what you’re paying for.
+            </p>
+            <p>
+                In no event shall Mockupea or its suppliers be liable for any damages 
+                (including, without limitation, damages for loss of data or profit, or due to business interruption) 
+                arising out of the use or inability to use the materials on https://mockupea.com, even if Mockupea authorized 
+                representative has been notified orally or in writing of the possibility of such damage. 
+                Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or 
+                incidental damages, these limitations may not apply to you.
+            </p>
+            <div>
+                <p>
+                    The app does use third party services that declare their own
+                    Terms and Conditions.
+                </p>
+                <p>
+                    Link to Terms and Conditions of third party service
+                    providers used by the app
+                </p>
+                <ul>
+                    <!---->
+                    <!---->
+                    <li><a href="https://marketingplatform.google.com/about/analytics/terms/us/" target="_blank"
+                            rel="noopener noreferrer">Google Analytics</a></li>
+                    <!---->
+                    <!---->
+                    <!---->
+                </ul>
+            </div>
+            <p>
+                You should be aware that there are certain things that
+                Mockupea Creator will not take responsibility for. Certain
+                functions of the app will require the app to have an active
+                internet connection. The connection can be Wi-Fi, or provided
+                by your mobile network provider, but Mockupea Creator
+                cannot take responsibility for the app not working at full
+                functionality if you don’t have access to Wi-Fi, and you don’t
+                have any of your data allowance left.
+            </p>
+            <p></p>
+            <p>
+                If you’re using the app outside of an area with Wi-Fi, you
+                should remember that your terms of the agreement with your
+                mobile network provider will still apply. As a result, you may
+                be charged by your mobile provider for the cost of data for
+                the duration of the connection while accessing the app, or
+                other third party charges. In using the app, you’re accepting
+                responsibility for any such charges, including roaming data
+                charges if you use the app outside of your home territory
+                (i.e. region or country) without turning off data roaming. If
+                you are not the bill payer for the device on which you’re
+                using the app, please be aware that we assume that you have
+                received permission from the bill payer for using the app.
+            </p>
+            <p>
+                The materials appearing on https://mockupea.com could include technical, 
+                typographical, or photographic errors. JustSketchMe does not warrant that any 
+                of the materials on its website are accurate, complete or current. Mockupea 
+                may make changes to the materials contained on its website at any time without notice. 
+                However Mockupea does not make any commitment to update the materials.
+            </p>
+            <p>
+                With respect to Owner’s responsibility for your
+                use of the app, when you’re using the app, it’s important to
+                bear in mind that although we endeavour to ensure that it is
+                updated and correct at all times, we do rely on third parties
+                to provide information to us so that we can make it available
+                to you. Mockupea Creator accepts no liability for any
+                loss, direct or indirect, you experience as a result of
+                relying wholly on this functionality of the app.
+            </p>
+            <p>
+                At some point, we may wish to update the app. The app is
+                currently available as a web application and all updates will
+                be pushed automatically without notifying the end users.
+                Mockupea Team does not promise that it
+                will always update the app so that it is relevant to you
+                and/or works with the version that you have
+                installed on your device. However, you promise to always
+                accept updates to the application, We may
+                also wish to stop providing the app, and may terminate use of
+                it at any time without giving notice of termination to you.
+                Unless we tell you otherwise, upon any termination, (a) the
+                rights and licenses granted to you in these terms will end;
+                (b) you must stop using the app, and (if needed) delete it
+                from your device.
+            </p>
+            <p><strong>Changes to This Terms and Conditions</strong></p>
+            <p>
+                We may update our Terms and Conditions
+                from time to time. Thus, you are advised to review this page
+                periodically for any changes. I will
+                notify you of any changes by posting the new Terms and
+                Conditions on this page.
+            </p>
+            <p>
+            </p>
+            <p><strong>Contact Us</strong></p>
+            <p>
+                If you have any questions or suggestions about my
+                Terms and Conditions, do not hesitate to contact me
+                at mockupea@gmail.com.
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- FAQ Modal-->
+    <div id="modal-faq" class="uk-flex-top uk-modal-container" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" uk-overflow-auto>
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <h3 class="uk-card-title" id="title">Frequently Asked Questions</h3>
+            <a class="faq-question" href="#" uk-toggle="target: #prvi; animation: uk-animation-fade">What is
+                Mockupea?</a>
+            <p id="prvi" class hidden>Mockupea is an app for creating a 3d book or magazine mockup in your
+                browser. You can use it to present your new ebook or magazine.</p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #drugi; animation: uk-animation-fade">How to use
+                Mockupea?</a>
+            <p id="drugi" class hidden>Use your left mouse button to rotate the view, right button to pan, and mouse
+                wheel to zoom in or out.<br /><br /> To start creating your mockup click on the blue <b>Edit</b>
+                button. First select the type for your mockup (Hardcover or Paperback). After that, you can upload your
+                front, back and spine designs. You can also change color of the spine or remove the uploaded texture by
+                pressing the button "Clear". Tweak the rest of the options to get the desired look.<br /><br />
+                Furthermore, in the Lighting tab, you can change the background color and play with the light setup,
+                exposure, and ambient light. Once you are happy with your result, find the camera angle you wish to
+                export in Cameras tab and then in Export tab click on PNG or JPG buttons to render. The image will be
+                rendered and automatically downloaded to your device. <br /><br />
+                <!-- <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/vnX9ecF1qwM" title="YouTube video player" allowfullscreen></iframe>
+             -->
+             <a href="https://www.youtube.com/embed/vnX9ecF1qwM" target="_blank">Click here to see YouTube video demo</a>
+            </p>
+        
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #treci; animation: uk-animation-fade">What book dimensions
+                are supported?</a>
+            <p id="treci" class hidden>Just select the type of book and after you upload your front cover image, the
+                size and dimensions of the mesh will adjust to your design. You may need to adjust the thickness a bit
+                :)</p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #cetvrti; animation: uk-animation-fade">How do I
+                download my mockup?</a>
+            <p id="cetvrti" class hidden>Once you are happy with the mockup you can export it in the EDIT menu. Just click
+                on the "Render and Export" button and choose PNG or JPG. If you select PNG, the background will be
+                transparent while the JPG will save the color of the background.</p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #peti; animation: uk-animation-fade">What is the
+                resolution of the saved mockup and can I change it?</a>
+            <p id="peti" class hidden>The resolution depends on the viewport size. It will be displayed below the export button.
+            </p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #sesti; animation: uk-animation-fade">Why is
+                exporting mockups sometimes slowing down the app?</a>
+            <p id="sesti" class hidden>At the moment, the way Mockupea exports mockups is by expanding the canvas to
+                hight resolution and that can sometimes slow down the app.</p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #sedmi; animation: uk-animation-fade">What is Tone
+                Mapping?</a>
+            <p id="sedmi" class hidden>This is used to approximate the appearance of high dynamic range (HDR) on the low
+                dynamic range medium of a standard computer monitor or mobile device's screen. The default is
+                ACESFilmic. You can play with the settings until you get something you like. If you do not like this
+                option, you can select "None" to disable it.</p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #deseti; animation: uk-animation-fade">Can I save my
+                scene and edit later?</a>
+            <p id="deseti" class hidden>It is not possible to save the scene yet. It will be added in the future updates
+            </p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #deveti; animation: uk-animation-fade">Do you store covers/images on the server?</a>
+            <p id="deveti" class hidden>NO. Mockupea works in your browser and all images that you upload are contained within your browser and never uploaded or sent to the server.</p>
+            <br>
+            <a class="faq-question" href="#" uk-toggle="target: #osmi; animation: uk-animation-fade">I have a
+                question, who can I ask?</a>
+            <p id="osmi" class hidden>If you have any suggestions, questions or just want to say hi, feel free to send
+                an email to mockupea@gmail.com :)</p>
+        </div>
+
+        </div>
+    </div>
+
+
+    <!-- Cropper Modal -->
+    <div id="cropperModal" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close style="padding:0;"></button>
+            <div class="uk-modal-body">
+                <div class="img-container" style="max-width: 100%;">
+                    <img class="image" src="" alt="Picture" style="max-width: 100%;">
+                </div>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button crop" id="cropButton" type="button">Crop</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spinner"
+        style="position: absolute; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; display: none;">
+        <img src="./assets/images/loader.gif" alt="loading..." style="position: absolute; width: 60px;" />
+    </div>
+
+    <div id="offcanvasUsage" uk-offcanvas="flip:true; bg-close:false; mode: slide;">
+        <div class="uk-offcanvas-bar uk-background-muted uk-box-shadow-small" style="background-color: white;">
+
+            <button class="uk-offcanvas-close" id="close" type="button" uk-close></button>
+
+            <div class="uk-container uk-container-center">
+                <ul class="uk-position-center uk-tab" data-uk-tab="{connect:'#my-id'}">
+                    <li><a href="#" uk-tooltip="title: Book" id="bookIcon"><svg width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path fill="#35435F" d="M19 3H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM7 5h11v10H7a3 3 0 0 0-1 .18V6a1 1 0 0 1 1-1zm0 14a1 1 0 0 1 0-2h11v2z"/>
+                            </svg></a></li>
+                    <li><a href="#" uk-tooltip="title: Lighting" id="lightIcon"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#35435F" d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9zm1.5 7.59a1 1 0 0 0-.5.87V20h-2v-4.54a1 1 0 0 0-.5-.87A3 3 0 0 1 9 12a3 3 0 0 1 6 0 3 3 0 0 1-1.5 2.59z"/><path d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1z"/><path d="M21 11h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"/><path d="M5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"/><path d="M7.66 6.42L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28 1 1 0 0 0 .72-.31 1 1 0 0 0-.06-1.41z"/><path d="M19.19 5.05a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41 1 1 0 0 0 .72.31 1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42z"/>
+                            </svg></a></li>
+                    <li><a href="#" uk-tooltip="title: Cameras" id="cameraIcon"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#35435F" d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"/>
+                            </svg></a></li>
+                    <li><a href="#" uk-tooltip="title: Render and Export" id="exportIcon"><svg width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path fill="#35435F" d="M20.12 8.71l-4.83-4.83A3 3 0 0 0 13.17 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-7.17a3 3 0 0 0-.88-2.12zM10 19v-2h4v2zm9-1a1 1 0 0 1-1 1h-2v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2v5a1 1 0 0 0 1 1h4a1 1 0 0 0 0-2h-3V5h3.17a1.05 1.05 0 0 1 .71.29l4.83 4.83a1 1 0 0 1 .29.71z"/>
+                            </svg></a></li>
+                </ul>
+
+                <ul id="my-id" class="uk-switcher">
+
+                    <li>
+                        <h1 class="uk-text-small uk-text-bold label">Book Type</h1>
+                        <div class="uk-inline uk-width-1-1">
+                            <button class="uk-button uk-button-primary uk-width-1-1" id="select-btn" type="button"><span
+                                    class="uk-margin-small-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-down"><rect width="24" height="24" transform="rotate(-90 12 12)" opacity="0"/><path fill="#35435F" d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05 2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17zm-3.91-7L12 14.82 16 10z"/></g></g></svg></span>Select</button>
+                            <div uk-dropdown="mode: click; offset: 1">
+                                <ul class="uk-nav uk-navbar-dropdown-nav size">
+                                    <li><a href="#" id="b">Hardcover</a></li>
+                                    <li><a href="#" id="c">Paperback</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Front Cover</h1>
+                        <div class="js-upload uk-width-1-1" uk-form-custom>
+                            <input id="userImage" type="file" accept=".jpg, .jpeg, .png">
+                            <button class="uk-button uk-button-primary uk-width-1-1" id="uploadFront-btn" type="button"
+                                tabindex="-1"><span class="uk-margin-small-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#35435F" d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/><path path fill="#35435F" d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14 3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8 4 4 0 0 1 7.84 0 1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5 1 1 0 0 0 .09 1.42 1 1 0 0 0 .66.25 1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7z"/></svg></span>Upload File</span></button>
+                        </div>
+
+
+                        <h1 class="uk-text-small uk-text-bold label">Back Cover</h1>
+                        <div class="js-upload uk-width-1-1" uk-form-custom>
+                            <input id="userImage2" type="file" accept=".jpg, .jpeg, .png">
+                            <button class="uk-button uk-button-primary uk-width-1-1" id="uploadBack-btn" type="button"
+                                tabindex="-1"><span class="uk-margin-small-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#35435F" d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/><path path fill="#35435F" d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14 3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8 4 4 0 0 1 7.84 0 1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5 1 1 0 0 0 .09 1.42 1 1 0 0 0 .66.25 1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7z"/></svg></span>Upload File</button>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Spine Cover</h1>
+                        <div class="spineAndClear">
+                            <div class="js-upload uk-width-1-1" uk-form-custom>
+                                <input id="userImage3" type="file" accept=".jpg, .jpeg, .png">
+                                <button class="uk-button uk-button-primary uk-width-1-1" id="uploadSpine-btn"
+                                    type="button" tabindex="-1"><span class="uk-margin-small-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#35435F" d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/><path path fill="#35435F" d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14 3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8 4 4 0 0 1 7.84 0 1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5 1 1 0 0 0 .09 1.42 1 1 0 0 0 .66.25 1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7z"/></svg></span>Upload File</button>
+                            </div>
+                            <button class="uk-button" type="button" id="clear"
+                                uk-tooltip="title: Remove spine texture">clear</button>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Spine Color</h1>
+                        <div class="container">
+                            <input class="uk-input" type="color" id="spine">
+                            <span class="container" id="color_val2"></span>
+                        </div>
+
+                        <div id="hc" style="margin-top: 40px;">
+                            <h1 class="uk-text-small uk-text-bold label">Inner Cover Color</h1>
+                            <div class="container">
+                                <input class="uk-input" type="color" id="hardCover">
+                                <span class="container" id="color_val3"></span>
+                            </div>
+                        </div>
+
+                        <div id="hc2" style="margin-top: 40px;">
+                            <h1 class="uk-text-small uk-text-bold label">Inner Spine Color</h1>
+                            <div class="container">
+                                <input class="uk-input" type="color" id="innerSpine">
+                                <span class="container" id="color_val4"></span>
+                            </div>
+                        </div>
+
+                        <div id="hc3" style="margin-top: 40px;">
+                            <h1 class="uk-text-small uk-text-bold label">Endband Color</h1>
+                            <div class="container">
+                                <input class="uk-input" type="color" id="endband">
+                                <span class="container" id="color_val5"></span>
+                            </div>
+                        </div>
+
+                        <div id="hc4" style="margin-top: 40px;">
+                            <h1 class="uk-text-small uk-text-bold label">Pages Color</h1>
+                            <div class="container">
+                                <input class="uk-input" type="color" id="pagesColor">
+                                <span class="container" id="color_val6"></span>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Book Angle</h1>
+                        <div class="uk-button-group uk-width-1-1">
+                            <button class="uk-button uk-button-primary uk-width-1-2" id="rotateUp"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-ios-upward"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path fill="#35435F" d="M18 15a1 1 0 0 1-.64-.23L12 10.29l-5.37 4.32a1 1 0 0 1-1.41-.15 1 1 0 0 1 .15-1.41l6-4.83a1 1 0 0 1 1.27 0l6 5a1 1 0 0 1 .13 1.41A1 1 0 0 1 18 15z"/></g></g></svg></span>Up</button>
+                            <button class="uk-button uk-button-primary uk-width-1-2" id="rotateDown"><span><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-ios-downward"><rect width="24" height="24" opacity="0"/><path fill="#35435F" d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/></g></g></svg></span>Down</button>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Book Tilt</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider2">
+                                <input class="uk-range" type="range" value="0" min="-1" max="1" step="0.1" id="Tilt">
+                                <span class="range-slider_reflectivity_value" id="tiltSetValue">0</span>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Thickness</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider">
+                                <input class="uk-range" type="range" value="0" min="0.01" max="1" step="0.01"
+                                    id="Thick">
+                                <span class="range-slider_value" id="thicknessSetValue">0</span>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Roughness</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider2">
+                                <input class="uk-range" type="range" value="1" min="0.1" max="1" step="0.1"
+                                    id="Reflect">
+                                <span class="range-slider_reflectivity_value" id="roughnessSetValue">1</span>
+                            </div>
+                        </div>
+
+
+
+
+                        <h1 class="uk-text-small uk-text-bold label">Ground Shadows</h1>
+                        <div class="uk-margin">
+
+                            <div class="group">
+
+                                <h1 class="uk-text-small label">Shadow Opacity</h1>
+                                <div class="uk-margin">
+                                    <div class="range-slider">
+                                        <input class="uk-range" type="range" value="0.4" min="0" max="1" step="0.001"
+                                            id="ShadowOpacity">
+                                        <span class="range-slider_value shadowValue" id="shadowOpacitySetValue">0.4</span>
+                                    </div>
+                                </div>
+
+                                <h1 class="uk-text-small label">Shadow Blur</h1>
+                                <div class="uk-margin">
+                                    <div class="range-slider">
+                                        <input class="uk-range" type="range" value="0.5" min="0.4" max="3" step="0.1"
+                                            id="ShadowBlur">
+                                        <span class="range-slider_value shadowValue" id="shadowBlurSetValue">0.5</span>
+                                    </div>
+                                </div>
+
+                                <h1 class="uk-text-small label">Shadow Height</h1>
+                                <div class="uk-margin">
+                                    <div class="range-slider">
+                                        <input class="uk-range" type="range" value="-0.015" min="-0.4" max="0.1"
+                                            step="0.001" id="ShadowHeight">
+                                        <span class="range-slider_value shadowValue" id="shadowHeightSetValue">-0.015</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li>
+                        <h1 class="uk-text-small uk-text-bold label">Background Color</h1>
+                        <div class="container">
+                            <input class="uk-input" type="color" id="background">
+                            <span class="container" id="color_val"></span>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="group">
+                                <h1 class="uk-text-small uk-text-bold label">Environment Map</h1>
+                                <label class="uk-switch" for="default-1">
+                                    <input type="checkbox" id="default-1" checked>
+                                    <div class="uk-switch-slider"></div>
+                                </label>
+
+                                <h1 class="uk-text-small uk-text-bold label">Tone Mapping</h1>
+                                <div class="uk-inline uk-width-1-1">
+                                    <button class="uk-button uk-button-primary uk-width-1-1" id="select-btn2"
+                                        type="button"><span class="uk-margin-small-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="arrow-down"><rect width="24" height="24" transform="rotate(-90 12 12)" opacity="0"/><path fill="#35435F" d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05 2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17zm-3.91-7L12 14.82 16 10z"/></g></g></svg></span>Select</button>
+                                    <div uk-dropdown="mode: click; offset: 1">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav tonem">
+                                            <li><a href="#" id="no">None</a></li>
+                                            <li><a href="#" id="linear">Linear</a></li>
+                                            <li><a href="#" id="cineon">Cineon</a></li>
+                                            <li><a href="#" id="aces">ACES</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Ambient Light</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider3">
+                                <input class="uk-range" type="range" value="20" min="0" max="20" step="0.1" id="Ambient">
+                                <span class="range-slider_ambient_value" id="ambientSetValue">20</span>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Front Light</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider4">
+                                <input class="uk-range" type="range" value="0" min="0" max="9.9" step="0.1" id="Front">
+                                <span class="range-slider_front_value" id="frontSetValue">0</span>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Back Light</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider5">
+                                <input class="uk-range" type="range" value="0" min="0" max="9.9" step="0.1" id="Back">
+                                <span class="range-slider_back_value" id="backSetValue">0</span>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Side Light</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider5">
+                                <input class="uk-range" type="range" value="0.4" min="0" max="9.9" step="0.1"
+                                    id="SideLight">
+                                <span class="range-slider_back_value" id="sideSetValue">0.4</span>
+                            </div>
+                        </div>
+
+                        <h1 class="uk-text-small uk-text-bold label">Exposure</h1>
+                        <div class="uk-margin">
+                            <div class="range-slider6">
+                                <input class="uk-range" type="range" value="0.5" min="0" max="1" step="0.1"
+                                    id="Exposure">
+                                <span class="range-slider_exposure_value" id="exposureSetValue">0</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+
+                        <h1 class="uk-text-small uk-text-bold label">Camera Settings</h1>
+                        <div class="uk-margin">
+
+                            <div class="group">
+                                <div class="camera_lock">
+                                    <button class="uk-button uk-button-primary uk-width-1-1" id="camera1">Camera
+                                        1</button>
+                                    <label><input class="lock1_checkbox" type="checkbox"><span class="lock1"
+                                            uk-icon="icon: lock" uk-tooltip="title: Lock position"></span></label>
+                                </div>
+
+                                <div class="uk-button-group uk-width-1-1">
+                                    <button class="uk-button uk-button-primary uk-width-1-2 uk-button-small"
+                                        id="saveCamera1"
+                                        uk-tooltip="title: Save camera position and fov to browser local storage. It will not work in private mode">Save</button>
+                                    <button class="uk-button uk-button-primary uk-width-1-2 uk-button-small"
+                                        id="loadCamera1" uk-tooltip="title: Load camera position and fov">Load</button>
+                                </div>
+
+                                <h1 class="uk-text-small label">Field Of View</h1>
+                                <div class="uk-margin">
+                                    <div class="range-slider">
+                                        <input class="uk-range" type="range" value="50" min="20" max="60" step="1"
+                                            id="FOV">
+                                        <span class="range-slider_value" id="fov1" >50</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="group">
+                                <div class="camera_lock2"> 
+                                    <button class="uk-button uk-button-primary uk-width-1-1" id="camera2" >Camera
+                                        2 </button>
+                                    <label><input class="lock2_checkbox" type="checkbox"><span class="lock2"
+                                            uk-icon="icon: lock" uk-tooltip="title: Lock position"></span></label>
+                                </div>
+                                <div class="uk-button-group uk-width-1-1">
+                                    <button class="uk-button uk-button-primary uk-width-1-2 uk-button-small" id="saveCamera2"
+                                        uk-tooltip="title: Save camera position and fov to browser local storage. It will not work in private mode" disabled>Save</button>
+                                    <button class="uk-button uk-button-primary uk-width-1-2 uk-button-small" id="loadCamera2"
+                                        uk-tooltip="title: Load camera position and fov" >Load</button>
+                                </div>
+
+                                <h1 class="uk-text-small label">Field Of View</h1>
+                                <div class="uk-margin">
+                                    <div class="range-slider">
+                                        <input class="uk-range" type="range" value="50" min="20" max="60" step="1"
+                                            id="FOV2" >
+                                        <span class="range-slider_value" id="fov2">50</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="group">
+                                <div class="camera_lock3">
+                                    <button class="uk-button uk-button-primary uk-width-1-1" id="camera3" >Camera
+                                        3 </button>
+                                    <label><input class="lock3_checkbox" type="checkbox"><span class="lock3"
+                                            uk-icon="icon: lock" uk-tooltip="title: Lock position"></span></label>
+                                </div>
+                                <div class="uk-button-group uk-width-1-1">
+                                    <button class="uk-button uk-button-primary uk-width-1-2 uk-button-small" id="saveCamera3"
+                                        uk-tooltip="title: Save camera position and fov to browser local storage. It will not work in private mode" disabled>Save</button>
+                                    <button class="uk-button uk-button-primary uk-width-1-2 uk-button-small" id="loadCamera3"
+                                        uk-tooltip="title: Load camera position and fov" >Load</button>
+                                </div>
+
+                                <h1 class="uk-text-small label">Field Of View</h1>
+                                <div class="uk-margin">
+                                    <div class="range-slider">
+                                        <input class="uk-range" type="range" value="50" min="20" max="60" step="1"
+                                            id="FOV3" >
+                                        <span class="range-slider_value" id="fov3">50</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h1 class="uk-text-small uk-text-bold label">Export As Image</h1>
+                        <div class="uk-button-group uk-width-1-1">
+                            <button class="uk-button uk-button-primary uk-width-1-2" id="png"
+                                uk-tooltip="title: Transparent background"><span class="uk-margin-small-right"></span><span uk-icon="download" class="uk-margin-small-right" id="downloadIcon"></span>PNG</button>
+                            <button class="uk-button uk-button-primary uk-width-1-2" id="jpg"
+                                uk-tooltip="title: Keep background color."><span class="uk-margin-small-right"><span uk-icon="download" class="uk-margin-small-right"></span>JPG </button>
+                        </div>
+                        <p class="exportResolution" id="jpgResolution">Basic version: </br> 500 x 400 px</p>
+                        <h1 class="uk-text-small uk-text-bold label">Export 3D Mesh</h1>
+                        <button class="uk-button uk-button-primary uk-width-1-1" id="export"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="margin-right: 10px;">
+                                <path
+                                    fill="#35435F" d="M12 0l-11 6v12.131l11 5.869 11-5.869v-12.066l-11-6.065zm7.91 6.646l-7.905 4.218-7.872-4.294 7.862-4.289 7.915 4.365zm-16.91 1.584l8 4.363v8.607l-8-4.268v-8.702zm10 12.97v-8.6l8-4.269v8.6l-8 4.269z"/>
+                            </svg>Export gltf</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function removehash() {
+            setTimeout(function () {
+                history.replaceState("", document.title, window.location.pathname);
+            }, 1);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../app/ct.js" type="module" defer></script>
+    <script src="../app/sc.js" type="module" defer></script>
+    <script src="app/cs.js"defer></script>
+    <script src="../app/mp.js" type="module" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"
+        integrity="sha512-ooSWpxJsiXe6t4+PPjCgYmVfr1NS5QXJACcR/FPpsdm6kqG1FmQ2SVyg2RXeVuCRBLr0lWHnWJP6Zs1Efvxzww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css"
+        integrity="sha512-+VDbDxc9zesADd49pfvz7CgsOl2xREI/7gnzcdyA9XjuTxLXrdpuz21VVIqc5HPfZji2CypSbxx1lgD7BgBK5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.js"
+        integrity="sha512-ZK6m9vADamSl5fxBPtXw6ho6A4TuX89HUbcfvxa2v2NYNT/7l8yFGJ3JlXyMN4hlNbz0il4k6DvqbIW5CCwqkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css"
+        integrity="sha512-0SPWAwpC/17yYyZ/4HSllgaK7/gg9OlVozq8K7rf3J8LvCjYEEIfzzpnA2/SSjpGIunCSD18r3UhvDcu/xncWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+
+</html>

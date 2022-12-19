@@ -1064,7 +1064,7 @@ function hardcover() {
     let materialinnerCover = new THREE.MeshPhysicalMaterial({ morphTargets: true });
     let materialSpineInnerCover = new THREE.MeshPhysicalMaterial({ morphTargets: true });
 
-    loader.load('/assets/models/HC_book.glb', function (gltf) {
+    loader.load('HC_book.glb', function (gltf) {
         hardcoverBook = gltf.scene;
         paperHardcover = gltf.scene.getObjectByName('pages');
         cover_frontHardcover = gltf.scene.getObjectByName('cover_front');
@@ -1144,7 +1144,7 @@ function custom() {
     let materialPagesCustom = new THREE.MeshPhysicalMaterial();
     let mmaterialSpineCustom = new THREE.MeshPhysicalMaterial();
 
-    loader2.load('./assets/models/magazineC.glb', function (gltf) {
+    loader2.load('magazineC.glb', function (gltf) {
         magazineC = gltf.scene;
         paperc = gltf.scene.getObjectByName('pages');
         cover_frontc = gltf.scene.getObjectByName('cover_front');
